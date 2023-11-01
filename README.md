@@ -1,40 +1,52 @@
-![](https://github.com/Nahid1992/CAD_PE/blob/main/figures/Tittle_Logo.png)
+![](https://github.com/Nahid1992/CAD_PE/blob/main/figures/Tittle_Logo_MedIA.png)
 <!-- # Seeking an Optimal Approach for Computer-aided Pulmonary Embolism Detection -->
 Pulmonary embolism (PE) represents a blood clot that travels to the blood vessels in the lung, causing vascular obstruction, and in some patients, death. CT pulmonary angiography (CTPA), is the most common type of medical imaging to evaluate patients with suspected PE. These CT scans consist of hundreds of images that require detailed review to identify clots within the pulmonary arteries. Recent research in deep learning across academia and industry produced numerous architectures, various model initialization, and distinct learning paradigms. It has resulted in many competing approaches to CAD implementation in medical imaging and produced great confusion in the CAD community. we have conducted extensive experiments with various deep learning methods applicable for PE diagnosis at both slice and exam levels using the [RSNA PE dataset](https://www.kaggle.com/c/rsna-str-pulmonary-embolism-detection/overview).
  
- ![](https://github.com/Nahid1992/CAD_PE/blob/main/figures/Workflow.png)
+ ![](https://github.com/Nahid1992/CAD_PE/blob/main/figures/WorlFlow_MedIA.jpg)
  
 ## Publication
-**Seeking an Optimal Approach for Computer-aided Pulmonary Embolism Detection** <br/><br/>
+**Seeking an Optimal Approach for Computer-aided Pulmonary Embolism Detection** <br/>
 [Nahid Ul Islam](https://github.com/Nahid1992)<sup>1</sup>, [Shiv Gehlot](https://github.com/shivgahlout)<sup>1</sup>, [Zongwei Zhou](https://github.com/MrGiovanni)<sup>1</sup>, [Michael B Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, and [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
 <sup>1</sup>Arizona State University, <sup>2</sup>Mayo Clinic<br/>
 International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI 2021](https://www.miccai2021.org/)); Machine Learning in Medical Imaging ([MLMI2021](https://sites.google.com/view/mlmi2021/))<br/>
-[Paper](https://arxiv.org/pdf/2109.07029.pdf) | [Graphical Abstract](https://github.com/Nahid1992/CAD_PE/blob/main/figures/MLMI2021_Graphical_abstract.pdf) | [Poster](https://github.com/Nahid1992/CAD_PE/blob/main/figures/MLMI2021_PE_Poster.pdf) | [Code](https://github.com/Nahid1992/CAD_PE) | [Slides](https://github.com/Nahid1992/CAD_PE/blob/main/figures/MLMI2021_Presentation.pdf) | [Presentation](https://youtu.be/LivPIQ0D0-g)
+[Paper](https://arxiv.org/pdf/2109.07029.pdf) | [Graphical Abstract](https://github.com/Nahid1992/CAD_PE/blob/main/figures/MLMI2021_Graphical_abstract.pdf) | [Poster](https://github.com/Nahid1992/CAD_PE/blob/main/figures/MLMI2021_PE_Poster.pdf) | [Code](https://github.com/Nahid1992/CAD_PE) | [Slides](https://github.com/Nahid1992/CAD_PE/blob/main/figures/MLMI2021_Presentation.pdf) | [Presentation](https://youtu.be/LivPIQ0D0-g)<br/><br/>
+
+**Seeking an Optimal Approach for Computer-aided Diagnosis of Pulmonary Embolism** <br/>
+[Nahid Ul Islam](https://github.com/Nahid1992)<sup>1</sup>, [Zongwei Zhou](https://github.com/MrGiovanni)<sup>1</sup>, [Shiv Gehlot](https://github.com/shivgahlout)<sup>1</sup>, [Michael B Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, and [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
+<sup>1</sup>Arizona State University, <sup>2</sup>Mayo Clinic<br/>
+[Medical Image Analysis (MedIA)](https://www.sciencedirect.com/journal/medical-image-analysis)<br/>
+[Paper](https://www.sciencedirect.com/science/article/pii/S1361841523002487) | [Graphical Abstract](https://github.com/Nahid1992/CAD_PE/blob/main/figures/PE_Graphical_Abstract.pdf) | [Poster](https://github.com/Nahid1992/CAD_PE/blob/main/figures/MedIA_PE_Journal_v9.pdf) | [Code](https://github.com/Nahid1992/CAD_PE) | [Slides](MedIA_30mins_Presentation_v6_PDF) | [Presentation](https://www.dropbox.com/scl/fi/lkwm2dia274uf51qpobkv/MedIA_30mins_Presentation_v6.pptx?rlkey=8khn61a3zm5p7mw1kbkb1tqdz&dl=0))
 
 ## Major results from our work
-**1. Transfer learning improves the performance despite modality difference between datasets**
+**1. Transfer learning boosts performance despite differences between photographic images and CTPA scans**
 <p align="left">
-<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/Backbone_Random_vs_ImageNet.jpg" width=70% height=70%>
+<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/J_Backbone_Random_vs_ImageNet_v3.jpg" width=70% height=70%>
 </p>
 
 **2. Squeeze & excitation blocks enhance CNN performance**
 <p align="left">
-<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/Backbone_w_o_SEblock.jpg" width=70% height=70%>
+<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/J_Backbone_w_o_SEblock.jpg" width=70% height=70%>
 </p>
  
-**3. Transfer learning with self-supervised methods performs better than supervised model**
+**3. Self-supervised pre-training can surpass (fully) supervised pre-training**
 <p align="left">
-<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/Backbone_ResNet50_SSL.jpg" width=70% height=70%>
+<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/J_Backbone_ResNet50_SSL.jpg" width=70% height=70%>
 </p>
 
-**4. Vision transformer performs inferiorly compared with CNN**
+**4. Model trained on the RSNA PE dataset demonstrates promising performance when tested on unseen datasets for slice-level PE classification**
 <p align="left">
-<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/ViT-B.jpg" width=70% height=70%>
+<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/fig_CADPE_FUMPE_GradCam.jpg" width=70% height=70%>
 </p>
  
-**5. Conventional classification (CC)  marginally outperforms the Multiple instance learning (MIL) for exam-level data**
+**5. Proposed Embedding-based ViT (E-ViT) utilizes class and exam-level embeddings generated by the transformer encoder and outperforms BiGRU**
 <p align="left">
-<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/2ndStage_PE_Exam_CCvsMIL.jpg" width=70% height=70%>
+<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/J_figure_ViTnew_Zongwei_Nahid_v4.jpg" width=70% height=70%>
+<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/EViTResults.jpg" width=70% height=70%>
+</p>
+
+**6. Vessel-oriented image representation and self-supervised pre-training both enhance performance for PE false positive reduction across image dimensions.**
+<p align="left">
+<img src="https://github.com/Nahid1992/CAD_PE/blob/main/figures/VOIR_Results.jpg" width=70% height=70%>
 </p>
 
 ## Data organization and preprocessing steps
